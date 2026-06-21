@@ -1,0 +1,17 @@
+{
+  "luci-app-uqmi-sms": {
+    "description": "Grant access to uQMI SMS",
+    "read": {
+      "ubus": {
+        "luci.uqmi_sms": [ "get_messages" ]
+      },
+      "uci": [ "uqmi_sms" ]
+    },
+    "write": {
+      "ubus": {
+        "luci.uqmi_sms": [ "send_message", "delete_message" ]
+      },
+      "uci": [ "uqmi_sms" ]
+    }
+  }
+}

@@ -1,0 +1,166 @@
+msgid ""
+msgstr "Content-Type: text/plain; charset=UTF-8"
+
+#: applications/luci-app-uqmi-sms/htdocs/luci-static/resources/view/uqmi-sms/sms.js:47
+msgid "uQMI SMS"
+msgstr ""
+
+#: applications/luci-app-uqmi-sms/htdocs/luci-static/resources/view/uqmi-sms/sms.js:55
+msgid "Send SMS"
+msgstr ""
+
+#: applications/luci-app-uqmi-sms/htdocs/luci-static/resources/view/uqmi-sms/sms.js:57
+msgid "Target"
+msgstr ""
+
+#: applications/luci-app-uqmi-sms/htdocs/luci-static/resources/view/uqmi-sms/sms.js:68
+msgid "Message"
+msgstr ""
+
+#: applications/luci-app-uqmi-sms/htdocs/luci-static/resources/view/uqmi-sms/sms.js:81
+msgid "Send"
+msgstr ""
+
+#: applications/luci-app-uqmi-sms/htdocs/luci-static/resources/view/uqmi-sms/sms.js:115
+msgid "Inbox"
+msgstr ""
+
+#: applications/luci-app-uqmi-sms/htdocs/luci-static/resources/view/uqmi-sms/sms.js:118
+msgid "Refresh"
+msgstr ""
+
+#: applications/luci-app-uqmi-sms/htdocs/luci-static/resources/view/uqmi-sms/sms.js:123
+msgid "Delete selected"
+msgstr ""
+
+#: applications/luci-app-uqmi-sms/htdocs/luci-static/resources/view/uqmi-sms/sms.js:129
+msgid "Delete all"
+msgstr ""
+
+#: applications/luci-app-uqmi-sms/htdocs/luci-static/resources/view/uqmi-sms/sms.js:137
+msgid "ID"
+msgstr ""
+
+#: applications/luci-app-uqmi-sms/htdocs/luci-static/resources/view/uqmi-sms/sms.js:138
+msgid "Sender"
+msgstr ""
+
+#: applications/luci-app-uqmi-sms/htdocs/luci-static/resources/view/uqmi-sms/sms.js:139
+msgid "Time"
+msgstr ""
+
+#: applications/luci-app-uqmi-sms/htdocs/luci-static/resources/view/uqmi-sms/sms.js:141
+msgid "Actions"
+msgstr ""
+
+#: applications/luci-app-uqmi-sms/htdocs/luci-static/resources/view/uqmi-sms/sms.js:88
+msgid "No messages"
+msgstr ""
+
+#: applications/luci-app-uqmi-sms/htdocs/luci-static/resources/view/uqmi-sms/sms.js:151
+msgid "Delete"
+msgstr ""
+
+#: applications/luci-app-uqmi-sms/htdocs/luci-static/resources/view/uqmi-sms/sms.js:165
+msgid "Unable to read SMS messages"
+msgstr ""
+
+#: applications/luci-app-uqmi-sms/htdocs/luci-static/resources/view/uqmi-sms/sms.js:222
+msgid "Delete this SMS message?"
+msgstr ""
+
+#: applications/luci-app-uqmi-sms/htdocs/luci-static/resources/view/uqmi-sms/sms.js:228
+#: applications/luci-app-uqmi-sms/htdocs/luci-static/resources/view/uqmi-sms/sms.js:267
+#: applications/luci-app-uqmi-sms/htdocs/luci-static/resources/view/uqmi-sms/sms.js:299
+msgid "Cancel"
+msgstr ""
+
+#: applications/luci-app-uqmi-sms/htdocs/luci-static/resources/view/uqmi-sms/sms.js:221
+msgid "Delete SMS"
+msgstr ""
+
+#: applications/luci-app-uqmi-sms/htdocs/luci-static/resources/view/uqmi-sms/sms.js:243
+#: applications/luci-app-uqmi-sms/htdocs/luci-static/resources/view/uqmi-sms/sms.js:282
+#: applications/luci-app-uqmi-sms/htdocs/luci-static/resources/view/uqmi-sms/sms.js:314
+msgid "Unable to delete SMS"
+msgstr ""
+
+#: applications/luci-app-uqmi-sms/htdocs/luci-static/resources/view/uqmi-sms/sms.js:262
+msgid "Delete selected SMS"
+msgstr ""
+
+#: applications/luci-app-uqmi-sms/htdocs/luci-static/resources/view/uqmi-sms/sms.js:263
+msgid "Delete selected SMS messages?"
+msgstr ""
+
+#: applications/luci-app-uqmi-sms/htdocs/luci-static/resources/view/uqmi-sms/sms.js:294
+msgid "Delete all SMS"
+msgstr ""
+
+#: applications/luci-app-uqmi-sms/htdocs/luci-static/resources/view/uqmi-sms/sms.js:295
+msgid "Delete all SMS messages?"
+msgstr ""
+
+#: applications/luci-app-uqmi-sms/htdocs/luci-static/resources/view/uqmi-sms/sms.js:209
+msgid "Target phone number and message body are required"
+msgstr ""
+
+#: applications/luci-app-uqmi-sms/htdocs/luci-static/resources/view/uqmi-sms/sms.js:257
+msgid "No SMS messages selected"
+msgstr ""
+
+#: applications/luci-app-uqmi-sms/htdocs/luci-static/resources/view/uqmi-sms/sms.js:212
+msgid "SMS sent"
+msgstr ""
+
+#: applications/luci-app-uqmi-sms/htdocs/luci-static/resources/view/uqmi-sms/sms.js:215
+msgid "Unable to send SMS"
+msgstr ""
+
+#: applications/luci-app-uqmi-sms/htdocs/luci-static/resources/view/uqmi-sms/sms.js:318
+msgid "Unable to delete SMS messages"
+msgstr ""
+
+#: applications/luci-app-uqmi-sms/htdocs/luci-static/resources/view/uqmi-sms/config.js:9
+msgid "Configure the uQMI SMS backend."
+msgstr ""
+
+#: applications/luci-app-uqmi-sms/htdocs/luci-static/resources/view/uqmi-sms/config.js:11
+msgid "General"
+msgstr ""
+
+#: applications/luci-app-uqmi-sms/htdocs/luci-static/resources/view/uqmi-sms/config.js:14
+msgid "Modem device"
+msgstr ""
+
+#: applications/luci-app-uqmi-sms/htdocs/luci-static/resources/view/uqmi-sms/config.js:19
+msgid "Message storage"
+msgstr ""
+
+#: applications/luci-app-uqmi-sms/htdocs/luci-static/resources/view/uqmi-sms/config.js:21
+msgid "ME (mobile equipment)"
+msgstr ""
+
+#: applications/luci-app-uqmi-sms/htdocs/luci-static/resources/view/uqmi-sms/config.js:22
+msgid "SM (SIM card)"
+msgstr ""
+
+#: applications/luci-app-uqmi-sms/htdocs/luci-static/resources/view/uqmi-sms/config.js:23
+msgid "SR (status report)"
+msgstr ""
+
+#: applications/luci-app-uqmi-sms/root/usr/share/luci/menu.d/luci-app-uqmi-sms.json:3
+msgid "uQMI SMS"
+msgstr ""
+
+#: applications/luci-app-uqmi-sms/root/usr/share/luci/menu.d/luci-app-uqmi-sms.json:13
+msgid "Messages"
+msgstr ""
+
+#: applications/luci-app-uqmi-sms/root/usr/share/luci/menu.d/luci-app-uqmi-sms.json:20
+msgid "Configuration"
+msgstr ""
+
+#: applications/luci-app-uqmi-sms/root/usr/share/rpcd/acl.d/luci-app-uqmi-sms.json:3
+msgid "Grant access to uQMI SMS"
+msgstr ""

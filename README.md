@@ -1,53 +1,37 @@
-# uqmi-sms
+# UQMI SMS
 
-Use UQMI to send, receive, and delete SMS
+This repository contains two OpenWrt packages:
 
-## 1. Build
+- `uqmi-sms` — Go command line tool, ucode RPC backend and default UCI config.
+- `luci-app-uqmi-sms` — LuCI web interface.
 
-```shell
-go get uqmi_sms
+## Build with OpenWrt source tree
+
+### Method 1: Add as a feed
+
+Insert into `feeds.conf.default` (before running `./scripts/feeds update -a`):
+
+```text
+src-git uqmi_sms https://github.com/lwhttpdorg/uqmi-sms.git;main
 ```
 
-```shell
-go build
+Then update and install feeds:
+
+```sh
+./scripts/feeds update -a
+./scripts/feeds install -a
 ```
 
-## 2. Read SMS
+### Method 2: Clone into `package/`
 
-### 2.1 Read SMS by ID
+After `./scripts/feeds install -a`, run:
 
-```shell
-uqmi-sms -read -id <ID>
+```sh
+git clone https://github.com/lwhttpdorg/uqmi-sms.git package/uqmi-sms
 ```
 
-### 2.2 Read all SMS
+OpenWrt scans `package/` recursively, so both `uqmi-sms` and `luci-app-uqmi-sms` will appear in `make menuconfig` without editing `feeds.conf`.
 
-```shell
-uqmi-sms -read
-```
+## License
 
-## 3. Delete SMS
-
-### 3.1 Delete SMS by ID
-
-```shell
-uqmi-sms -delete -id <ID>
-```
-
-### 3.2 Delete all SMS
-
-```shell
-uqmi-sms -delete
-```
-
-## 4. Send SMS
-
-```shell
-uqmi-sms -send -target <target_phone_number> -text <message>
-```
-
-eg:
-
-```shell
-uqmi-sms -send -target 10010 -text "hello world!"
-```
+GPL-3.0-or-later.

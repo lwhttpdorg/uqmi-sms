@@ -1,0 +1,28 @@
+{
+  "admin/services/uqmi-sms": {
+    "title": "uQMI SMS",
+    "order": 60,
+    "action": {
+      "type": "firstchild"
+    },
+    "depends": {
+      "acl": [ "luci-app-uqmi-sms" ]
+    }
+  },
+  "admin/services/uqmi-sms/messages": {
+    "title": "Messages",
+    "order": 1,
+    "action": {
+      "type": "view",
+      "path": "uqmi-sms/sms"
+    }
+  },
+  "admin/services/uqmi-sms/config": {
+    "title": "Configuration",
+    "order": 2,
+    "action": {
+      "type": "view",
+      "path": "uqmi-sms/config"
+    }
+  }
+}
