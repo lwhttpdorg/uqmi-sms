@@ -4,7 +4,7 @@
 include $(TOPDIR)/rules.mk
 
 PKG_NAME:=luci-app-uqmi-sms
-PKG_VERSION:=0.2.0
+PKG_VERSION:=0.1.0
 PKG_RELEASE:=1
 
 PKG_MAINTAINER:=lwhttpdorg
@@ -21,9 +21,8 @@ define Package/luci-app-uqmi-sms/postinst
 		/etc/uci-defaults/80_uqmi_sms; \
 		rm -f /etc/uci-defaults/80_uqmi_sms; \
 	}; \
-	rm -f /tmp/luci-indexcache.*; \
+	rm -f /tmp/luci-indexcache /tmp/luci-indexcache.*; \
 	rm -rf /tmp/luci-modulecache/; \
-	/etc/init.d/rpcd restart 2>/dev/null; \
 	exit 0; \
 }
 endef
