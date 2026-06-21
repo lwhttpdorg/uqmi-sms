@@ -21,7 +21,7 @@ include $(TOPDIR)/feeds/packages/lang/golang/golang-package.mk
 define Build/Prepare
 	$(RM) -r $(PKG_BUILD_DIR)
 	$(INSTALL_DIR) $(PKG_BUILD_DIR)
-	$(CP) ./go.mod ./go.sum ./cmd ./internal $(PKG_BUILD_DIR)/
+	$(CP) ./LICENSE ./go.mod ./go.sum ./cmd ./internal $(PKG_BUILD_DIR)/
 endef
 
 define Package/uqmi-sms
