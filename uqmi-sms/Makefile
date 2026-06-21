@@ -29,7 +29,7 @@ define Package/uqmi-sms
   CATEGORY:=Utilities
   TITLE:=UQMI SMS command line tool
   URL:=https://github.com/lwhttpdorg/uqmi-sms
-  DEPENDS:=$(GO_ARCH_DEPENDS) +uqmi +rpcd-mod-ucode
+  DEPENDS:=$(GO_ARCH_DEPENDS) +uqmi
 endef
 
 define Package/uqmi-sms/description
@@ -40,10 +40,6 @@ endef
 
 define Package/uqmi-sms/install
 	$(call GoPackage/Package/Install/Bin,$(1))
-	$(INSTALL_DIR) $(1)/usr/share/rpcd/ucode
-	$(INSTALL_DATA) ./root/usr/share/rpcd/ucode/uqmi-sms.uc $(1)/usr/share/rpcd/ucode/
-	$(INSTALL_DIR) $(1)/etc/uci-defaults
-	$(INSTALL_BIN) ./root/etc/uci-defaults/80_uqmi_sms $(1)/etc/uci-defaults/
 endef
 
 $(eval $(call GoBinPackage,uqmi-sms))

@@ -12,7 +12,7 @@ PKG_LICENSE:=GPL-3.0-or-later
 PKG_LICENSE_FILES:=LICENSE
 
 LUCI_TITLE:=LuCI support for uQMI SMS
-LUCI_DEPENDS:=+PACKAGE_luci-app-uqmi-sms:uqmi-sms +luci-base
+LUCI_DEPENDS:=+uqmi-sms +luci-base +rpcd-mod-ucode
 LUCI_PKGARCH:=all
 
 include $(TOPDIR)/feeds/luci/luci.mk
