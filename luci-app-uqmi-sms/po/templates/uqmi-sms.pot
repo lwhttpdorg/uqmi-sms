@@ -10,7 +10,7 @@ msgid "Send SMS"
 msgstr ""
 
 #: applications/luci-app-uqmi-sms/htdocs/luci-static/resources/view/uqmi-sms/sms.js:57
-msgid "Target"
+msgid "Recipient"
 msgstr ""
 
 #: applications/luci-app-uqmi-sms/htdocs/luci-static/resources/view/uqmi-sms/sms.js:68
@@ -102,7 +102,7 @@ msgid "Delete all SMS messages?"
 msgstr ""
 
 #: applications/luci-app-uqmi-sms/htdocs/luci-static/resources/view/uqmi-sms/sms.js:209
-msgid "Target phone number and message body are required"
+msgid "Recipient phone number and message body are required"
 msgstr ""
 
 #: applications/luci-app-uqmi-sms/htdocs/luci-static/resources/view/uqmi-sms/sms.js:257

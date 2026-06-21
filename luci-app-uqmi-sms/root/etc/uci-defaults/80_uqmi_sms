@@ -1,11 +1,8 @@
 #!/bin/sh
 
-uci -q batch <<-EOF > /dev/null
-	delete uqmi_sms.main
-	set uqmi_sms.main=uqmi_sms
-	set uqmi_sms.main.device='/dev/cdc-wdm0'
-	set uqmi_sms.main.storage='me'
-	commit uqmi_sms
-EOF
+uci -q get uqmi_sms.main >/dev/null || uci -q set uqmi_sms.main='uqmi_sms'
+uci -q get uqmi_sms.main.device >/dev/null || uci -q set uqmi_sms.main.device='/dev/cdc-wdm0'
+uci -q get uqmi_sms.main.storage >/dev/null || uci -q set uqmi_sms.main.storage='me'
+uci -q commit uqmi_sms
 
 exit 0

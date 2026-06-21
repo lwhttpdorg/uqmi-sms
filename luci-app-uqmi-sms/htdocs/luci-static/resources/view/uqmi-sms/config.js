@@ -8,7 +8,7 @@ return view.extend({
 
 		m = new form.Map('uqmi_sms', _('uQMI SMS'), _('Configure the uQMI SMS backend.'));
 
-		s = m.section(form.TypedSection, 'main', _('General'));
+		s = m.section(form.NamedSection, 'main', 'uqmi_sms', _('General'));
 		s.anonymous = true;
 		s.addremove = false;
 
