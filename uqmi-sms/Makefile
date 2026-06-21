@@ -18,6 +18,12 @@ GO_PKG_BUILD_PKG:=$(GO_PKG)/cmd/uqmi-sms
 include $(INCLUDE_DIR)/package.mk
 include $(TOPDIR)/feeds/packages/lang/golang/golang-package.mk
 
+define Build/Prepare
+	$(RM) -r $(PKG_BUILD_DIR)
+	$(INSTALL_DIR) $(PKG_BUILD_DIR)
+	$(CP) ./go.mod ./go.sum ./cmd ./internal $(PKG_BUILD_DIR)/
+endef
+
 define Package/uqmi-sms
   SECTION:=utils
   CATEGORY:=Utilities
