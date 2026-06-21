@@ -1,0 +1,3 @@
+config uqmi_sms 'main'
+	option device '/dev/cdc-wdm0'
+	option storage 'me'

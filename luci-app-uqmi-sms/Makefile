@@ -15,6 +15,10 @@ LUCI_TITLE:=LuCI support for uQMI SMS
 LUCI_DEPENDS:=+uqmi-sms +luci-base +rpcd-mod-ucode
 LUCI_PKGARCH:=all
 
+define Package/luci-app-uqmi-sms/conffiles
+/etc/config/uqmi_sms
+endef
+
 define Package/luci-app-uqmi-sms/postinst
 [ -n "$${IPKG_INSTROOT}" ] || { \
 	[ ! -x /etc/uci-defaults/80_uqmi_sms ] || { \
